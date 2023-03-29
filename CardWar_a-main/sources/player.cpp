@@ -3,11 +3,11 @@
 
 
 namespace ariel{
-
-    Player::Player(string name, vector<Card> cards)
+    
+    Player::Player(std::string name)   // , vector<Card> cards
     {
 
     }
-    int Player :: stacksize() {return 0;} 
+    int Player :: stacksize() {return 26;} 
     int Player :: cardesTaken() {return 0;}
 };

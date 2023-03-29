@@ -11,10 +11,10 @@ namespace ariel{
 
     class Player{
         string name;    
-        vector<Card> cards;
+        // vector<Card> cards;
 
     public:
-        Player(string name, vector<Card> cards);
+        Player(string name); // , vector<Card> cards
         int stacksize();
         int cardesTaken();
     };

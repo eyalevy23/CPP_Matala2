@@ -8,11 +8,11 @@ namespace ariel{
 
     class Card{
         int value;
-        int type;
+        int suits;
 
     public:
-        Card(int val, int typ); // Constructor defined
-
+        Card(int val, int suits); // Constructor defined
+        int highestCard(const Card & card2) const;
     }; // Semicolon added after the class definition
 
 }
