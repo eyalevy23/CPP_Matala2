@@ -13,12 +13,23 @@ TEST_CASE("Test for card")
     Card card2(12,2);
     Card card3(11,2);
     Card card4(11,1);
+    Card card5(2,3);
 
     CHECK(card1.highestCard(card3) == 1);
     CHECK(card2.highestCard(card3) == -1);
     CHECK(card3.highestCard(card4) == 0);
     CHECK(card4.highestCard(card3) == 0);
     CHECK(card2.highestCard(card4) == -1);
+    CHECK(card2.highestCard(card5) == -1);
+    CHECK(card4.highestCard(card5) == -1);
+    CHECK(card1.highestCard(card5) == -1);
+    CHECK(card3.highestCard(card4) == -1);
+    CHECK(card5.highestCard(card1) == 1);
+    CHECK(card5.highestCard(card4) == 1);
+    CHECK(card5.highestCard(card3) == 1);
+    
+
+
 }
 
 TEST_CASE("Test fot player")
